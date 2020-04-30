@@ -17,8 +17,12 @@ function doSlideshow(value){
   }
   $('.title')
   .css('background-image','url("'+images[nextimage]+'")');
+
+  setTimeout(function (){
+    doSlideshow(value);
+  }, 3000);
 }
 
 $(function() {
-  // doSlideshow(1);
 });
+doSlideshow(1);
