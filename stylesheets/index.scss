@@ -192,6 +192,14 @@ body {
         }
 
         .right {
+          .mapouter {
+            height: 200px;
+            width: 400px;
+            .gmap_canvas {
+              height: 200px;
+              width: 400px;
+            }
+          }
 
         }
     }
@@ -227,7 +235,14 @@ body {
       }
 
       .right {
-
+        .mapouter {
+          height: 200px;
+          width: 400px;
+          .gmap_canvas {
+            height: 200px;
+            width: 400px;
+          }
+        }
       }
   }
 }

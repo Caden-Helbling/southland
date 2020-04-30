@@ -149,6 +149,14 @@ body {
     margin-top: 32px;
     align-self: center;
   }
+  .title .right .mapouter {
+    height: 200px;
+    width: 400px;
+  }
+  .title .right .mapouter .gmap_canvas {
+    height: 200px;
+    width: 400px;
+  }
 }
 @media screen and (max-width: 768px) {
   .title {
@@ -172,6 +180,14 @@ body {
     position: inherit;
     margin-top: 32px;
     align-self: center;
+  }
+  .title .right .mapouter {
+    height: 200px;
+    width: 400px;
+  }
+  .title .right .mapouter .gmap_canvas {
+    height: 200px;
+    width: 400px;
   }
 }
 
