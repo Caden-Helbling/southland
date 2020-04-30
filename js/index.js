@@ -1,18 +1,24 @@
-let nextimage=0;
-let images = new Array('/img/bg1.jpg','/img/bg2.jpg','/img/bg3.jpg');
+let nextimage = 0;
+let images = new Array('img/bg.jpeg', 'img/bg1.jpg','img/bg2.jpg','img/bg3.jpg');
 
 
 function doSlideshow(value){
-  if(nextimage>=images.length){nextimage=0;}
-   if(nextimage < 0){nextimage=images.length - 1;}
-   if (value == 1) {
-     $('.title')
-     .css('background-image','url("'+images[nextimage++]+'")');
-   }
-   else if (value == 2) {
-     $('.title')
-     .css('background-image','url("'+images[nextimage--]+'")');
-   }
+  if (value == 1) {
+    ++nextimage;
+  }
+  else if (value == 2) {
+    --nextimage;
+  }
+  if (nextimage >= images.length) {
+    nextimage = 0;
+  }
+  if (nextimage < 0) {
+    nextimage = images.length - 1;
+  }
+  console.log(nextimage);
+  console.log(images[nextimage]);
+  $('.title')
+  .css('background-image','url("'+images[nextimage]+'")');
 }
 
 $(function() {

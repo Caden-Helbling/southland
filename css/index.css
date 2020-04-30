@@ -19,13 +19,14 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
-  background-image: url("/img/bg1.jpg");
+  background-image: url("../img/bg.jpeg");
   background-size: cover;
   background-position: center;
   background-blend-mode: color-burn;
   background-color: rgba(0, 0, 0, 0.7);
 }
-.title .logo {
+.title a .logo {
+  cursor: pointer;
   position: absolute;
   top: 25px;
   left: 25px;
@@ -38,10 +39,11 @@ body {
   justify-content: center;
   flex-basis: 65%;
   padding: 96px;
+  font-size: 20px;
 }
 .title .left h1 {
   color: #689F38;
-  font-size: 48px;
+  font-size: 64px;
   font-family: "Fredericka the Great", cursive;
   text-align: center;
   margin: 0;
@@ -81,11 +83,15 @@ body {
   bottom: 25px;
 }
 .title .left .links a {
-  color: inherit;
+  color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
   text-align: left;
   margin-right: 25px;
   cursor: pointer;
+  font-size: 18px;
+}
+.title .left .links a:hover {
+  color: white;
 }
 .title .left .links a i {
   color: #FF9800;

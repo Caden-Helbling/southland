@@ -27,34 +27,37 @@ body {
 
     color: rgba(255, 255, 255, 1);
 
-    background-image: url('/img/bg1.jpg');
+    background-image: url('../img/bg.jpeg');
     background-size: cover;
     background-position: center;
     background-blend-mode: color-burn;
     background-color: rgba(0, 0, 0, 0.7);
 
-    .logo {
-      position: absolute;
-      top: 25px;
-      left: 25px;
+    a {
+      .logo {
+        cursor: pointer;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+      }
     }
 
     .left {
       position: relative;
-
       height: 100vh;
 
       display: flex;
       flex-direction: column;
       justify-content: center;
-
       flex-basis: 65%;
 
       padding: 96px;
 
+      font-size: 20px;
+
       h1 {
         color: #689F38;
-        font-size: 48px;
+        font-size: 64px;
         font-family: $font-cursive;
 
         text-align: center;
@@ -98,18 +101,23 @@ body {
       .links {
         display: flex;
         flex-direction: row;
-        // justify-content: space-around;
         align-self: flex-end;
 
         position: absolute;
         bottom: 25px;
 
         a {
-          color: inherit;
+          color: rgba(255, 255, 255, 0.7);
           text-decoration: none;
           text-align: left;
           margin-right: 25px;
           cursor: pointer;
+
+          font-size: 18px;
+
+          &:hover {
+            color: rgba(255, 255, 255, 1);
+          }
 
           i {
             color: #FF9800;
@@ -129,9 +137,7 @@ body {
       flex-direction: column;
       justify-content: center;
       flex-basis: 35%;
-      // color: rgba(255, 255, 255, 0.8);
       padding: 25px;
-      // margin: 25px;
 
       p {
         font-size: 24px;
