@@ -8,116 +8,126 @@ sass --watch stylesheets:css
 body {
   margin: 0;
   padding: 0;
-  font-family: "EB Garamond", serif;
+  font-family: "Cabin", sans-serif;
+  position: relative;
 }
 
 .title {
   display: flex;
   flex-direction: row;
   height: 100vh;
-}
-.title .left {
-  flex-basis: 40%;
-  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-image: url("/img/bg1.jpg");
   background-size: cover;
   background-position: center;
   background-blend-mode: color-burn;
-  background-color: black;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
 }
-.title .left img {
-  width: auto;
-  height: 450px;
+.title .logo {
+  position: absolute;
+  top: 25px;
+  left: 25px;
 }
-.title .right {
-  flex-basis: 60%;
-  height: 100%;
-  background-color: black;
+.title .left {
+  position: relative;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  flex-basis: 65%;
+  padding: 96px;
 }
-.title .right p {
-  color: #fff;
-  font-size: 24px;
-  margin-left: 16px;
-}
-.title .right h1 {
-  font-family: "Pacifico", cursive;
-  margin-left: 16px;
+.title .left h1 {
+  color: #689F38;
+  font-size: 48px;
+  font-family: "Fredericka the Great", cursive;
+  text-align: center;
+  margin: 0;
   padding: 0;
-  color: #558b2f;
-  font-weight: 500;
-  font-size: 72px;
 }
-.title .right .about {
-  margin-left: 16px;
-  font-family: "EB Garamond", serif;
-  font-size: 18px;
-  color: white;
+.title .left p {
+  text-align: center;
 }
-.title .right .links {
-  margin-left: 16px;
-  margin-top: 64px;
-  display: flex;
-  flex-direction: row;
-}
-.title .right .links a {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  text-decoration: none;
-  color: #fff;
-  font-size: 24px;
-  margin: 8px 0 32px 0;
-}
-.title .right .links a i {
-  font-size: 24px;
-  margin: 0 64px 0 0;
+.title .left p span {
   color: #FF9800;
 }
-.title .right .links a i:hover {
-  color: #D32F2F;
+.title .left .btn {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 12px 16px;
+  font-size: 24px;
+  outline: none;
+  cursor: pointer;
+}
+.title .left .btn:hover {
+  color: white;
+}
+.title .left .btn-left {
+  position: absolute;
+  left: 25px;
+}
+.title .left .btn-right {
+  position: absolute;
+  right: 25px;
+}
+.title .left .links {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+  position: absolute;
+  bottom: 25px;
+}
+.title .left .links a {
+  color: inherit;
+  text-decoration: none;
+  text-align: left;
+  margin-right: 25px;
+  cursor: pointer;
+}
+.title .left .links a i {
+  color: #FF9800;
+  font-size: 24px;
+  margin: 16px;
+  margin-right: 36px;
+}
+.title .right {
+  height: 100vh;
+  background-color: #455A64;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 35%;
+  padding: 25px;
+}
+.title .right p {
+  font-size: 24px;
+  text-align: center;
+}
+.title .right .mapouter {
+  position: relative;
+  text-align: right;
+  height: 400px;
+  width: 500px;
+}
+.title .right .mapouter .gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 400px;
+  width: 500px;
+  filter: drop-shadow(6px 6px 2px rgba(0, 0, 0, 0.5));
 }
 
 @media screen and (max-width: 1024px) {
   .title {
     flex-direction: column;
   }
-  .title .left {
-    display: none;
-    justify-content: flex-start;
-    flex-basis: 20%;
-  }
-  .title .left img {
-    height: 125px;
-  }
-  .title .right {
-    flex-basis: 80%;
-  }
-  .title .right h1 {
-    font-size: 32px;
-  }
 }
 @media screen and (max-width: 768px) {
   .title {
     flex-direction: column;
-  }
-  .title .left {
-    display: none;
-    justify-content: flex-start;
-  }
-  .title .left img {
-    height: 125px;
-  }
-  .title .right {
-    flex-basis: 100%;
-  }
-  .title .right h1 {
-    font-size: 32px;
   }
 }
 
