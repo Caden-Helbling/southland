@@ -1,5 +1,5 @@
 let nextimage = 0;
-let images = new Array('img/bg.jpeg', 'img/bg1.jpg','img/bg2.jpg','img/bg3.jpg');
+let images = new Array('img/bg1.jpg','img/bg2.jpg','img/bg3.jpg', 'img/bg4.jpg');
 
 
 function doSlideshow(value){
