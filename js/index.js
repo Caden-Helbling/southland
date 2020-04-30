@@ -15,8 +15,6 @@ function doSlideshow(value){
   if (nextimage < 0) {
     nextimage = images.length - 1;
   }
-  console.log(nextimage);
-  console.log(images[nextimage]);
   $('.title')
   .css('background-image','url("'+images[nextimage]+'")');
 }
